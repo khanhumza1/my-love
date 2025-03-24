@@ -1,0 +1,226 @@
+/* 🌟 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;                      /* Dark text */
+    line-height: 1.6;
+    overflow-x: hidden;               /* Prevent horizontal scroll */
+}
+
+/* 🚀 Navigation Menu */
+.nav-bar {
+    background: #333;                 /* Dark navbar */
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;                  /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #00bcd4;                  /* Cyan hover effect */
+}
+
+/* 💖 Snobee Message */
+.love-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: #222;                  /* Dark background */
+    color: #fff;                       /* White text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 100px auto;
+    max-width: 900px;
+    opacity: 0;                        /* Initially hidden */
+    transform: translateY(40px);       /* Slide down */
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.love-container.active {
+    opacity: 1;                        /* Fade in */
+    transform: translateY(0);          /* Move into place */
+}
+
+.top-message, .bottom-message {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* 🔥 Section Styling */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+/* 🌟 Animations on Scroll */
+.section.animate {
+    opacity: 0;                         /* Initially hidden */
+    transform: translateY(40px);        /* Slide down */
+}
+
+.section.active {
+    opacity: 1;                         /* Fade in */
+    transform: translateY(0);           /* Move into place */
+}
+
+/* 🌌 Memories Section (Light Grey Background) */
+.memories {
+    background: #d3d3d3;                /* Light Grey */
+    color: #333;                        /* Dark text for contrast */
+}
+
+/* ✨ Dreams Section (Dark Grey Background) */
+.dreams {
+    background: #555;                   /* Dark Grey */
+    color: #f0f0f0;                     /* Light text for contrast */
+}
+
+/* 🌿 Future Adventures Section (Light Green Background) */
+.new-section {
+    background: #90EE90;                /* Light green */
+    color: #333;                        /* Dark text for readability */
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;                         /* Initially hidden */
+    transform: translateY(40px);        /* Slide down */
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.new-section.active {
+    opacity: 1;                         /* Fade in */
+    transform: translateY(0);           /* Move into place */
+}
+
+.new-section h2 {
+    font-size: 60px;                    /* Larger heading */
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.new-section p {
+    font-size: 24px;                    /* Larger subheading */
+    max-width: 800px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* 🚀 Next Button */
+.next-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 22px;
+    color: #fff;
+    background: #00bcd4;                     /* Cyan button */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.next-btn:hover {
+    background: #007b8f;                     /* Darker cyan hover */
+    transform: translateY(-5px);             /* Slight lift */
+}
+
+/* 💻 Smooth Scrolling for Sections */
+html {
+    scroll-behavior: smooth;                 /* Smooth scroll effect */
+}
+
+/* 🌀 Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;              /* Stack menu on small screens */
+    }
+
+    .section {
+        padding:
+/* 💖 Align and Style Next Button */
+.btn-container {
+    display: flex;
+    justify-content: center;   /* Center the button */
+    align-items: center;
+    margin-top: 20px;          /* Add space below the paragraph */
+}
+
+.next-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;               /* White text */
+    background: #ff69b4;       /* Pink background */
+    text-decoration: none;
+    border-radius: 30px;       /* Rounded edges */
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px #ff69b4;   /* Pink glowing effect */
+}
+
+.next-btn:hover {
+    background: #ff1493;       /* Darker pink on hover */
+    box-shadow: 0 0 25px #ff1493;   /* Stronger glow on hover */
+    transform: scale(1.1);     /* Slightly enlarge on hover */
+}
+/* 💖 Align and Style Next Button */
+.btn-container {
+    display: flex;
+    justify-content: center;   /* Center the button */
+    align-items: center;
+    margin-top: 20px;          /* Space below the paragraph */
+}
+
+.next-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;               /* White text */
+    background: #ff69b4;       /* Pink background */
+    text-decoration: none;
+    border-radius: 30px;       /* Rounded edges */
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px #ff69b4;   /* Pink glowing effect */
+}
+
+.next-btn:hover {
+    background: #ff1493;       /* Darker pink on hover */
+    box-shadow: 0 0 25px #ff1493;   /* Stronger glow on hover */
+    transform: scale(1.1);     /* Slightly enlarge on hover */
+}
