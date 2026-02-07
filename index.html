@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website for Snobee 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🌟 Snobee Message -->
+<div class="love-container animate">
+    <div class="top-message">Hii Snobee, this is your husband's first website 💖</div>
+    <div class="bottom-message">And this is where we will share every moment ✨</div>
+</div>
+
+<!-- 🚀 Future Adventures Page -->
+<div class="section new-section animate">
+    <h2>Future Adventures 💖</h2>
+    <p>All the exciting trips, activities, and moments we want to experience together!</p>
+>
+</div>
+
+<!-- 💖 Our Memories -->
+<div class="section memories animate">
+    <h2>Our Memories 💖</h2>
+    <p>This is where we can add beautiful pictures and share memories!</p>
+</div>
+<!-- ✨ Dreams Page (Next Button Below Paragraph) -->
+<div class="section dreams">
+    <h2>Our Dreams ✨</h2>
+    <p>All the future goals and dreams we want to achieve together!</p>
+
+    <!-- 🚀 Next Button Below Paragraph -->
+    <div class="btn-container">
+        <a href="future.html" class="next-btn">Next</a>
+    </div>
+</div>
+
+<!-- 🌐 Navigation Menu -->
+<nav class="nav-bar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="next.html">Gallery</a></li>
+        <li><a href="us.html">Us</a></li>
+    </ul>
+</nav>
+
+<!-- ⚙️ Scroll Animation Script -->
+<script>
+    // 🌟 Scroll Animation Script
+    const elements = document.querySelectorAll('.animate');
+
+    const scrollAnimation = () => {
+        elements.forEach(el => {
+            const position = el.getBoundingClientRect().top;
+            const screenHeight = window.innerHeight;
+
+            if (position < screenHeight * 0.85) {
+                el.classList.add('active');  // Add animation effect
+            } else {
+                el.classList.remove('active');  // Remove when out of view
+            }
+        });
+    };
+
+    window.addEventListener('scroll', scrollAnimation);
+    window.addEventListener('load', scrollAnimation); 
+</script>
+
+</body>
+</html>
