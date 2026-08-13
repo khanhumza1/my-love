@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programming Concepts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+
+        <a href="index.html" class="logo">
+            MY PROJECT
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="next.html">Gallery</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="future.html">Development</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Header -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                PROGRAMMING
+            </p>
+
+            <h1>
+                Programming Concepts
+            </h1>
+
+            <p class="hero-text">
+                The ideas behind the website.
+            </p>
+
+            <p class="hero-subtext">
+                This project combines fundamental programming
+                concepts with web-development technologies to
+                create an interactive website.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HTML -->
+    <section class="section memories animate">
+
+        <span class="section-number">
+            01
+        </span>
+
+        <h2>
+            HTML
+        </h2>
+
+        <p>
+            HTML provides the structure of the website.
+            It is used to create headings, paragraphs,
+            buttons, navigation menus, links and other
+            elements that appear on the page.
+        </p>
+
+    </section>
+
+
+    <!-- CSS -->
+    <section class="section dreams animate">
+
+        <span class="section-number">
+            02
+        </span>
+
+        <h2>
+            CSS
+        </h2>
+
+        <p>
+            CSS controls the visual appearance of the website.
+            It is responsible for layout, spacing, typography,
+            animations, buttons and responsive design.
+        </p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <section class="section adventures animate">
+
+        <span class="section-number">
+            03
+        </span>
+
+        <h2>
+            JavaScript
+        </h2>
+
+        <p>
+            JavaScript adds interactivity to the website.
+            It can control animations, user interactions,
+            dynamic content and other interactive features.
+        </p>
+
+    </section>
+
+
+    <!-- Programming Logic -->
+    <section class="section memories animate">
+
+        <span class="section-number">
+            04
+        </span>
+
+        <h2>
+            Programming Logic
+        </h2>
+
+        <p>
+            Programming logic allows a website to respond
+            to different actions and conditions. It helps
+            developers break problems into smaller steps
+            and create solutions efficiently.
+        </p>
+
+    </section>
+
+
+    <!-- Continue -->
+    <section class="section dreams animate">
+
+        <span class="section-number">
+            05
+        </span>
+
+        <h2>
+            Continue
+        </h2>
+
+        <p>
+            Now let's look at how this project can be
+            developed further.
+        </p>
+
+        <div>
+
+            <a href="next.html" class="next-btn">
+                ← Gallery
+            </a>
+
+            <a href="future.html" class="next-btn">
+                Development →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Animation -->
+    <script>
+
+        const elements =
+            document.querySelectorAll('.animate');
+
+        function scrollAnimation() {
+
+            elements.forEach(element => {
+
+                const position =
+                    element.getBoundingClientRect().top;
+
+                const screenHeight =
+                    window.innerHeight;
+
+                if (position < screenHeight * 0.85) {
+
+                    element.classList.add('active');
+
+                }
+
+            });
+
+        }
+
+        window.addEventListener(
+            'scroll',
+            scrollAnimation
+        );
+
+        window.addEventListener(
+            'load',
+            scrollAnimation
+        );
+
+    </script>
+
+</body>
+
+</html>
