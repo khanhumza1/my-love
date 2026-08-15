@@ -1,185 +1,92 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Project Gallery</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav-bar">
+<header>
+    <div class="logo">MY PROJECT</div>
 
-        <a href="index.html" class="logo">
-            MY PROJECT
-        </a>
-
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="next.html">Gallery</a>
-            <a href="future.html">Development</a>
-            <a href="us.html">About</a>
-        </div>
-
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="next.html">Gallery</a>
+        <a href="concepts.html">Development</a>
     </nav>
+</header>
 
+<main>
 
-    <!-- Page Header -->
-    <section class="hero">
+    <section class="gallery-intro">
+        <span>01</span>
 
-        <div class="hero-content">
+        <h1>Project Gallery</h1>
 
-            <p class="small-text">
-                PROJECT GALLERY
-            </p>
+        <p>
+            A visual collection of the work, ideas and experiments
+            behind this project.
+        </p>
+    </section>
 
-            <h1>
-                Gallery
-            </h1>
+    <section class="gallery">
 
-            <p class="hero-text">
-                A visual overview of the project.
-            </p>
+        <div class="gallery-card">
+            <img src="images/273b77a8d718a847ce05e26fd5622323.jpg" alt="Project image">
+            <h2>Project Image</h2>
+            <p>One of the visual elements used while developing the project.</p>
+        </div>
 
-            <p class="hero-subtext">
-                This section can be used to showcase screenshots,
-                designs, experiments, and different stages of development.
-            </p>
+        <div class="gallery-card">
+            <img src="images/572e02ef351fdec9c2057991d63e09e7.jpg" alt="Project image">
+            <h2>Design Experiment</h2>
+            <p>An example of visual inspiration and experimentation.</p>
+        </div>
 
+        <div class="gallery-card">
+            <img src="images/asus.jpg" alt="ASUS">
+            <h2>Visual Reference</h2>
+            <p>A reference image used during the creative process.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/dodge1.jpg" alt="Dodge Challenger">
+            <h2>Creative Inspiration</h2>
+            <p>Another example of visual inspiration used in the project.</p>
+        </div>
+
+        <div class="gallery-card">
+            <img src="images/dodge2.jpg" alt="Dodge Challenger">
+            <h2>Design Inspiration</h2>
+            <p>Exploring different styles and visual directions.</p>
         </div>
 
     </section>
 
+    <section class="continue">
+        <span>02</span>
 
-    <!-- Project Showcase -->
-    <section class="section memories animate">
-
-        <span class="section-number">
-            01
-        </span>
-
-        <h2>
-            Project Showcase
-        </h2>
+        <h2>Continue Exploring</h2>
 
         <p>
-            Screenshots and visual examples of the website
-            can be added here as the project develops.
+            Learn how HTML, CSS and JavaScript were used to create
+            this project.
         </p>
 
+        <a href="concepts.html" class="button">
+            Development →
+        </a>
     </section>
 
+</main>
 
-    <!-- Technologies -->
-    <section class="section dreams animate">
-
-        <span class="section-number">
-            02
-        </span>
-
-        <h2>
-            Technologies Used
-        </h2>
-
-        <p>
-            HTML — Structure<br>
-            CSS — Design & Layout<br>
-            JavaScript — Interactivity
-        </p>
-
-    </section>
-
-
-    <!-- Continue -->
-    <section class="section adventures animate">
-
-        <span class="section-number">
-            03
-        </span>
-
-        <h2>
-            Continue Exploring
-        </h2>
-
-        <p>
-            Return to the main page or explore the future
-            development plans for this project.
-        </p>
-
-        <div>
-
-            <a href="index.html" class="next-btn">
-                ← Home
-            </a>
-
-            <a href="future.html" class="next-btn">
-                Development →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            Programming & Web Development Project
-        </p>
-
-        <span>
-            2026
-        </span>
-
-    </footer>
-
-
-    <!-- Scroll Animation -->
-    <script>
-
-        const elements =
-            document.querySelectorAll('.animate');
-
-        function scrollAnimation() {
-
-            elements.forEach(element => {
-
-                const position =
-                    element.getBoundingClientRect().top;
-
-                const screenHeight =
-                    window.innerHeight;
-
-                if (position < screenHeight * 0.85) {
-
-                    element.classList.add('active');
-
-                }
-
-            });
-
-        }
-
-        window.addEventListener(
-            'scroll',
-            scrollAnimation
-        );
-
-        window.addEventListener(
-            'load',
-            scrollAnimation
-        );
-
-    </script>
+<footer>
+    <p>Programming & Web Development Project</p>
+    <p>2026</p>
+</footer>
 
 </body>
-
 </html>
-```
