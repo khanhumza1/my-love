@@ -3,90 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Project Gallery</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Gallery layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .gallery-item {
+            border: 1px solid #444;
+            background: #111;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            border-color: #aaa;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 18px;
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        .gallery-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 60px;
+            padding-bottom: 80px;
+        }
+
+        .gallery-buttons a {
+            display: inline-block;
+            padding: 16px 30px;
+            border: 1px solid #555;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .gallery-buttons a:hover {
+            background: white;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">MY PROJECT</div>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="logo">MY PROJECT</div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="next.html">Gallery</a>
-        <a href="concepts.html">Development</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="next.html">Gallery</a>
+            <a href="future.html">Development</a>
+        </div>
     </nav>
-</header>
 
-<main>
 
-    <section class="gallery-intro">
-        <span>01</span>
+    <!-- Gallery -->
+    <main>
 
-        <h1>Project Gallery</h1>
+        <section class="section">
 
-        <p>
-            A visual collection of the work, ideas and experiments
-            behind this project.
-        </p>
-    </section>
+            <span class="section-number">01</span>
 
-    <section class="gallery">
+            <h1>Project Gallery</h1>
 
-        <div class="gallery-card">
-            <img src="images/273b77a8d718a847ce05e26fd5622323.jpg" alt="Project image">
-            <h2>Project Image</h2>
-            <p>One of the visual elements used while developing the project.</p>
-        </div>
+            <p>
+                A visual collection of the work, ideas and experiments
+                behind this project.
+            </p>
 
-        <div class="gallery-card">
-            <img src="images/572e02ef351fdec9c2057991d63e09e7.jpg" alt="Project image">
-            <h2>Design Experiment</h2>
-            <p>An example of visual inspiration and experimentation.</p>
-        </div>
 
-        <div class="gallery-card">
-            <img src="images/asus.jpg" alt="ASUS">
-            <h2>Visual Reference</h2>
-            <p>A reference image used during the creative process.</p>
-        </div>
+            <div class="gallery">
 
-        <div class="gallery-card">
-            <img src="images/dodge1.jpg" alt="Dodge Challenger">
-            <h2>Creative Inspiration</h2>
-            <p>Another example of visual inspiration used in the project.</p>
-        </div>
+                <!-- Image 1 -->
+                <div class="gallery-item">
+                    <img src="images/273b77a8d718a847ce05e26fd5622323.jpg"
+                         alt="Project image 1">
 
-        <div class="gallery-card">
-            <img src="images/dodge2.jpg" alt="Dodge Challenger">
-            <h2>Design Inspiration</h2>
-            <p>Exploring different styles and visual directions.</p>
-        </div>
+                    <div class="gallery-caption">
+                        Project Experiment 01
+                    </div>
+                </div>
 
-    </section>
 
-    <section class="continue">
-        <span>02</span>
+                <!-- Image 2 -->
+                <div class="gallery-item">
+                    <img src="images/572e02ef351fdec9c2057991d63e09e7.jpg"
+                         alt="Project image 2">
 
-        <h2>Continue Exploring</h2>
+                    <div class="gallery-caption">
+                        Project Experiment 02
+                    </div>
+                </div>
 
-        <p>
-            Learn how HTML, CSS and JavaScript were used to create
-            this project.
-        </p>
 
-        <a href="concepts.html" class="button">
-            Development →
-        </a>
-    </section>
+                <!-- Image 3 -->
+                <div class="gallery-item">
+                    <img src="images/asus.jpg"
+                         alt="Project image 3">
 
-</main>
+                    <div class="gallery-caption">
+                        Technology & Design
+                    </div>
+                </div>
 
-<footer>
-    <p>Programming & Web Development Project</p>
-    <p>2026</p>
-</footer>
+
+                <!-- Image 4 -->
+                <div class="gallery-item">
+                    <img src="images/dodge1.jpg"
+                         alt="Project image 4">
+
+                    <div class="gallery-caption">
+                        Creative Experiment 01
+                    </div>
+                </div>
+
+
+                <!-- Image 5 -->
+                <div class="gallery-item">
+                    <img src="images/dodge2.jpg"
+                         alt="Project image 5">
+
+                    <div class="gallery-caption">
+                        Creative Experiment 02
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation buttons -->
+            <div class="gallery-buttons">
+
+                <a href="index.html">
+                    ← Home
+                </a>
+
+                <a href="future.html">
+                    Development →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
